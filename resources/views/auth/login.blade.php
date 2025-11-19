@@ -36,7 +36,7 @@
                         <!-- <p class="text-center text-muted mb-4">TechCorp Solutions</p> -->
 
                         <!-- Login Form -->
-                       <form method="POST" action="{{ route('login') }}">
+                       <form method="POST" action="{{ route('admin.login') }}">
                                             @csrf
 
                                             @if (sizeof($errors) > 0)

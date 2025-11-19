@@ -80,6 +80,6 @@ class AuthController extends Controller
     $request->session()->invalidate();
     $request->session()->regenerateToken();
 
-    return redirect()->route('root'); // Redirect to home page after logout
+    return redirect()->route('admin.login'); // Redirect to home page after logout
 }
 }

@@ -9,6 +9,11 @@ use Illuminate\Support\Facades\Hash;
 
 class HomeController extends Controller
 {
+    
+    function index()
+    {
+        return view('front.index', ['title' => 'Home']);
+    }
     public function register()
     {
         return view('front.register', ['title' => 'Register']);

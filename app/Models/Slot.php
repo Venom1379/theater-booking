@@ -10,7 +10,6 @@ class Slot extends Model
     use HasFactory;
 
     protected $fillable = [
-        'show_id',
         'slot_name',
         'start_time',
         'end_time',
@@ -19,8 +18,5 @@ class Slot extends Model
         'status',
     ];
 
-    public function show()
-    {
-        return $this->belongsTo(Show::class);
-    }
+   
 }
